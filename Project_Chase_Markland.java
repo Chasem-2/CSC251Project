@@ -30,9 +30,9 @@ public class Project_Chase_Markland {
         height = sc.nextDouble();
         System.out.print("Please enter the Policyholder's Weight (in pounds): ");
         weight = sc.nextDouble();
-
+        //Creates a new instance of the policy class with the given user input
         Policy policy = new Policy(policyNumber, providerName, phFname, phLname, age, issmoker, height, weight);
-
+        //Outputs information from the policy class
         System.out.printf("Poilcy Number: %d\n",policy.getPNumber());
         System.out.printf("Provider Name: %s\n",policy.getName());
         System.out.printf("Policyholder's First Name: %s\n", policy.getphFname());
