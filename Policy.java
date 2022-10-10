@@ -1,11 +1,21 @@
 public class Policy {
 
-    //Private variables
+    //Variables
     private int policyNumber, age;
     private double height,weight;
     private String providerName, phFname, phLname, smoker;
 
-    //Constructor arugment
+    /**
+     * Policy constructor
+     * @param policyNumber Integer for the Policy Number
+     * @param providerName String for the name of the policy provider
+     * @param phFname String for the Policy Holders first name
+     * @param phLname String for the Policy holders last name
+     * @param age Integer for the policy holders age
+     * @param smoker String for if the policy holder is a smoker or not
+     * @param height Double for the policy holders height
+     * @param weight Double for the policy holders weight
+     */
     public Policy(int policyNumber, String providerName, String phFname, String phLname, int age, String smoker, double height, double weight){
         this.policyNumber = policyNumber;
         this.providerName = providerName;
@@ -17,12 +27,18 @@ public class Policy {
         this.weight = weight;
     }
 
-    //Determine BMI
+    /**
+     * Method for determining the BMI of the policy holder
+     * @return The total BMI of the policy holder
+     */
     public double getBMI(){
         return (weight * 703)/(height*height);
     }
 
-    //Determine Policy Price
+    /**
+     * Method to determine the total policy cost
+     * @return The total policy cost
+     */
     public double PolicyTotal(){
         double policyCost = 0;
         int BASE = 600;
