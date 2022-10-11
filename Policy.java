@@ -6,6 +6,22 @@ public class Policy {
     private String providerName, phFname, phLname, smoker;
 
     /**
+     * Constructor that does not accept arguments
+     * 
+     */
+    public Policy(){
+        policyNumber = 0;
+        providerName = "";
+        phFname = "";
+        phLname = "";
+        age = 0;
+        smoker = "";
+        height = 0;
+        weight = 0;
+     }
+
+
+    /**
      * Policy constructor
      * @param policyNumber Integer for the Policy Number
      * @param providerName String for the name of the policy provider
@@ -16,7 +32,7 @@ public class Policy {
      * @param height Double for the policy holders height
      * @param weight Double for the policy holders weight
      */
-    public Policy(int policyNumber, String providerName, String phFname, String phLname, int age, String smoker, double height, double weight){
+    public Policy(int policyNumber, String providerName, String phFname, String phLname, Integer age, String smoker, double height, double weight){
         this.policyNumber = policyNumber;
         this.providerName = providerName;
         this.phFname = phFname;
@@ -26,7 +42,6 @@ public class Policy {
         this.height = height;
         this.weight = weight;
     }
-
     /**
      * Method for determining the BMI of the policy holder
      * @return The total BMI of the policy holder
@@ -50,7 +65,7 @@ public class Policy {
         if(age>50)
         policyCost = policyCost+ADDFEE;
         //Check if Smoker
-        if(smoker.equals("Smoker"))
+        if(smoker.equals("smoker"))
         policyCost = policyCost + SMOKERFEE;
         //Check BMI
         if(getBMI()>35)
@@ -86,7 +101,7 @@ public class Policy {
     public void setphLname(String phLname){
         this.phLname = phLname;
     }
-    public int getAge(){
+    public Integer getAge(){
         return age;
     }
     public void setAge(int age){

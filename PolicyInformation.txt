@@ -1,5 +1,5 @@
 3450
-State Farm
+State-Farm
 Alice
 Jones
 20
@@ -17,7 +17,7 @@ non-smoker
 200
 
 2450
-Met Life
+Met-Life
 Chester
 Williams
 40
@@ -44,7 +44,7 @@ smoker
 105
 
 3477
-State Farm
+State-Farm
 Craig
 Duncan
 23
