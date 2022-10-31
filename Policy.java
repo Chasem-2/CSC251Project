@@ -125,4 +125,16 @@ public class Policy {
     public void setWeight(double weight){
         this.weight = weight;
     }
+
+    public String toString(){
+        String str = "Policy Number: " + policyNumber + 
+        "\nProvider Name: " + providerName + 
+        "\nPolicyholder's First Name: " + phFname + 
+        "\nPolicyholder's Last Name: " + phLname + 
+        "\nPolicyholder's Smoking Status: " + smoker + 
+        "\nPolicyholder's Age: " + age +
+        "\nPolicyholder's Weight" + weight + 
+        "\nPolicyholder's Height" + height;
+        return str;
+    }
 }
