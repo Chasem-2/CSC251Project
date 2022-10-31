@@ -9,6 +9,7 @@ public class Project_Chase_Markland {
         int policyNumber, age, smoker_total = 0, non_smoker_total = 0;
         double height, weight;
         String providerName, phFname, phLname, smoker;
+        int PolicyCount = 0;
         //create a scanner instance to import the file
         Scanner file;
         //create array list to store policy objects loaded from file
@@ -44,6 +45,7 @@ public class Project_Chase_Markland {
                 policy.setWeight(weight);
                 //adds object to policyarray
                 policyarray.add(policy);
+                PolicyCount++;
 
             }
         } catch (FileNotFoundException e) {
@@ -52,6 +54,7 @@ public class Project_Chase_Markland {
 
         for(int i=0; i < policyarray.size(); i++){
             //Outputs information from the policy class
+
             System.out.printf("Poilcy Number: %d\n",policyarray.get(i).getPNumber());
             System.out.printf("Provider Name: %s\n",policyarray.get(i).getName());
             System.out.printf("Policyholder's First Name: %s\n", policyarray.get(i).getphFname());
@@ -69,6 +72,7 @@ public class Project_Chase_Markland {
                 smoker_total++;
             } else{ non_smoker_total++;}
         }
+        System.out.println("There were " + PolicyCount + " Policy objects created.");
         System.out.println("The number of policies with a smoker is: " + smoker_total);
         System.out.println("The number of policies with a non-smoker is: " + non_smoker_total);
 
