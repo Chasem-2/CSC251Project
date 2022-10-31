@@ -133,8 +133,8 @@ public class Policy {
         "\nPolicyholder's Last Name: " + phLname + 
         "\nPolicyholder's Smoking Status: " + smoker + 
         "\nPolicyholder's Age: " + age +
-        "\nPolicyholder's Weight" + weight + 
-        "\nPolicyholder's Height" + height;
+        "\nPolicyholder's Weight: " + weight + 
+        "\nPolicyholder's Height: " + height;
         return str;
     }
 }

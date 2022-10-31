@@ -54,15 +54,7 @@ public class Project_Chase_Markland {
 
         for(int i=0; i < policyarray.size(); i++){
             //Outputs information from the policy class
-
-            System.out.printf("Poilcy Number: %d\n",policyarray.get(i).getPNumber());
-            System.out.printf("Provider Name: %s\n",policyarray.get(i).getName());
-            System.out.printf("Policyholder's First Name: %s\n", policyarray.get(i).getphFname());
-            System.out.printf("Policyholder's Last Name: %s\n",policyarray.get(i).getphLname());
-            System.out.printf("Policyholder's Smoking Status: %s\n",policyarray.get(i).isSmoker());
-            System.out.printf("Policyholder's Age: %d\n",policyarray.get(i).getAge());
-            System.out.printf("Policyholder's Weight: %.2f\n",policyarray.get(i).getWeight());
-            System.out.printf("Policyholder's Height: %.2f\n",policyarray.get(i).getHeight());
+            System.out.printf(policyarray.get(i).toString() + "\n");
             System.out.printf("Policy Price: $%.2f\n",policyarray.get(i).PolicyTotal());
             System.out.printf("Policyholder's BMI: %.2f\n",policyarray.get(i).getBMI());
             System.out.println();
