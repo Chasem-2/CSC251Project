@@ -71,5 +71,17 @@ public class PolicyHolder {
         this.PHweight = weight;
     }
      
+    public String toString(){
+        String str = "Policy Number: " + PolicyHolderNumber + 
+        "\nProvider Name: " + PHproviderName + 
+        "\nPolicyholder's First Name: " + PHFname + 
+        "\nPolicyholder's Last Name: " + PHLname + 
+        "\nPolicyholder's Smoking Status: " + PHsmoker + 
+        "\nPolicyholder's Age: " + PHage +
+        "\nPolicyholder's Weight" + PHweight + 
+        "\nPolicyholder's Height" + PHheight;
+        return str;
+    }
+
 
 }
